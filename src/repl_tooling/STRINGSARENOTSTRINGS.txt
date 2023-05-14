@@ -1,0 +1,25 @@
+"t: function (ns,name,str,_hash,_meta)
+    {\nthis.ns = ns;\nthis.name = name;
+        \nthis.str = str;
+        \nthis._hash = _hash;
+        \nthis._meta = _meta;
+        \nthis.cljs$lang$protocol_mask$partition0$ = 2154168321;
+        \nthis.cljs$lang$protocol_mask$partition1$ = 4096;\n}
+m: function (string)
+    {\nthis.string = string;
+    \nthis.cljs$lang$protocol_mask$partition0$ = 2147614720;
+    \nthis.cljs$lang$protocol_mask$partition1$ = 0;\n}"
+
+
+"t: value: java.lang.ClassCastException 
+m: value: class java.lang.String cannot be cast to class java.lang.Number (java.lang.Strin..."
+
+
+"t1: function String() { [native code] } 
+value: java.lang.ClassCastException 
+
+m1: function String() { [native code] } 
+value: class java.lang.String cannot be cast to class java.lang.Number (java.lang.Strin..."
+
+
+NOTE: ClojureScript treats Java objects as functions, so Strings are functions

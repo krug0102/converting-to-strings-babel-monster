@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# sudo apt-get remove java-common
+# sudo apt-get install -y wget gpg software-properties-common apt-transport-https
+# wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+# sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+sudo apt-get update
+sudo apt install libglib2.0-0 libnss3 libgtk3.0 libxss1 libasound2 ffmpeg wget unzip openjdk-8-jdk
+npm install
+
+sudo wget https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_linux64.zip
+sudo unzip chromedriver_linux64.zip
+sudo mv chromedriver /usr/bin
+sudo rm chromedriver_linux64.zip
+
+sudo wget https://github.com/borkdude/clj-kondo/releases/download/v2020.10.10/clj-kondo-2020.10.10-linux-static-amd64.zip
+sudo unzip clj-kondo*.zip
+sudo mv clj-kondo /usr/bin
+
+export DISPLAY=:99
+Xvfb -screen 0 1024x768x24+32 :99 &
+mkdir ~/video
+nohup ffmpeg -video_size 1024x768 -f x11grab -i :99.0 ~/video/out.mpg &
+
+npx shadow-cljs clj-run repl-tooling.integration/run-tests-on-ci

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$showdown.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,gCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,uCAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,eAAf,GAAiCC,OAAA,CAAQ,UAAR,CAAjC;AACAC,qCAAsCC,CAAAA,OAAtC,GAAgDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,eAA/D;;",
+"sources":["shadow.js.shim.module$showdown.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$showdown\");\ngoog.provide(\"module$shadow_js_shim_module$showdown\");\nshadow.js.shim.module$showdown = require(\"showdown\");\nmodule$shadow_js_shim_module$showdown.default = shadow.js.shim.module$showdown;\n"],
+"names":["goog","provide","shadow","js","shim","module$showdown","require","module$shadow_js_shim_module$showdown","default"]
+}

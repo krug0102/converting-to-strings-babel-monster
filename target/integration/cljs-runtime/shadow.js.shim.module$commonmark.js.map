@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$commonmark.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,kCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,yCAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,iBAAf,GAAmCC,OAAA,CAAQ,YAAR,CAAnC;AACAC,uCAAwCC,CAAAA,OAAxC,GAAkDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,iBAAjE;;",
+"sources":["shadow.js.shim.module$commonmark.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$commonmark\");\ngoog.provide(\"module$shadow_js_shim_module$commonmark\");\nshadow.js.shim.module$commonmark = require(\"commonmark\");\nmodule$shadow_js_shim_module$commonmark.default = shadow.js.shim.module$commonmark;\n"],
+"names":["goog","provide","shadow","js","shim","module$commonmark","require","module$shadow_js_shim_module$commonmark","default"]
+}
